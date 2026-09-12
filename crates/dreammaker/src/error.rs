@@ -147,6 +147,10 @@ impl Context {
         &self.config
     }
 
+    pub fn set_config(&mut self, config: Config) {
+        self.config = config;
+    }
+
     /// Set a severity at and above which errors will be printed immediately.
     pub fn set_print_severity(&mut self, print_severity: Option<Severity>) {
         self.print_severity = print_severity;
